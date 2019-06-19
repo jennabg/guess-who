@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Guess Who</title>
+<link href="/style/style.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+
+	<header>
+		<img src="https://fontmeme.com/permalink/190611/8ff2b242458b2c20e6862172c55644ce.png" alt="Guess the Avenger" border="0">
+	</header>
+
+
+	<main>
+    <div id="setusername">
+				<input type="text" id="username" placeholder="Enter your display name..." autocomplete="off"/>
+			<button id="usernamebtn">Submit</button>
+				<div id="users">
+          <ul id="users-list">
+            <li> Players: </li>
+          </ul>
+        </div>
+		</div>
+
+		<div class="flex-container">
+
+		<section id="chat">
+
+			<div id="messagebox" >
+				<ul id="messages"></ul>
+				<form action="">
+					 <input type="text" id="txt_msg" placeholder="Send a message..." autocomplete="off" />
+					 <input type="submit" id="sendbtn" value="Send" />
+					<!-- <button id="quitbtn">Leave Chat</button> -->
+				</form>
+				<div id="buttons">
+					<button id="youwin"> You guessed right!</button>
+					<input type="button" id="getCard" value="New Game!">
+					<input type="text" id="winner" autocomplete="off"/>
+				</div>
+		</div>
+		</section>
+
+		<section id="cards">
+
+				<div id="card"></div>
+				<div id="displayAllCards">
+					<h3> Character Options </h3>
+					<p> To eliminate an option, just click on the character you wish
+						to eliminate </p>
+
+				</div>
+		</section>
+	</div>
+</main>
+
+
+
+
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+</html>

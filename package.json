@@ -1,0 +1,15 @@
+{
+  "name": "socketsdemo",
+  "version": "1.0.0",
+  "description": "First time using sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jenna",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^2.2.0"
+  }
+}
